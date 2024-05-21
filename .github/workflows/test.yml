@@ -10,6 +10,6 @@ jobs:
     - name: Variable check
       run: echo ${GITHUB_ACTION_REPOSITORY}
     - name: Test perl
-      run: prove
+      run: prove -v
     - id: foo
       uses: ./
