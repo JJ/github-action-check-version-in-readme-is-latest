@@ -8,7 +8,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v4
     - name: Variable check
-      run: echo $GITHUB_ACTION_REPOSITORY
+      run: echo ${GITHUB_ACTION_REPOSITORY}
     - name: Test perl
       run: prove
     - id: foo
