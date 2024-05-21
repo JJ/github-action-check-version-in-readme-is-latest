@@ -3,7 +3,7 @@
 use v5.14;
 
 use lib qw(lib);
-use Action qw(get_Repo);
+use Action qw(getRepo);
 
 my $repoName = getRepo();
 say $repoName;
