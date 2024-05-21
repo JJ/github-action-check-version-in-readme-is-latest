@@ -9,6 +9,7 @@ contains the latest tagged version.
 To use it, just add this step:
 
 ```yaml
+name: Check correct version
 on: [push, pull_request]
 
 jobs:
@@ -17,6 +18,6 @@ jobs:
     name: Test version
     steps:
     - name: Check version
-      uses: JJ/github-action-check-version-in-readme-is-latest@v0.2
+      uses: JJ/github-action-check-version-in-readme-is-latest@v1
 ```
 
