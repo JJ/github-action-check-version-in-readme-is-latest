@@ -1,4 +1,4 @@
-# Check that the version in README is latest
+# Check that the version in README is latest [![.github/workflows/test.yml](https://github.com/JJ/github-action-check-version-in-readme-is-latest/actions/workflows/test.yml/badge.svg)](https://github.com/JJ/github-action-check-version-in-readme-is-latest/actions/workflows/test.yml)
 
 Doesn't it bother you when the example in the README file does not contain the
 latest version of the GitHub action and you have to fix it by hand? Well, no
