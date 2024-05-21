@@ -12,13 +12,8 @@ my $lastTag  = getLastTag();
 my $readme = getReadme();
 
 my $repoPlusVersion = $repoName."@".$lastTag;
-say $repoPlusVersion;
 
-my $isVersion = $readme =~ m/\Q$repoPlusVersion/;
-
-say "is version $isVersion";
-
-exit(1) unless $isVersion;
+exit(1) unless index($repoPlusVersion,$readme);
 
 
 

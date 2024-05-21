@@ -17,8 +17,6 @@ jobs:
     name: Test version
     steps:
     - name: Check version
-      uses: JJ/github-action-check-version-in-readme@v0.1
-      with:
-        fetch-depth: 0
+      uses: JJ/github-action-check-version-in-readme-is-latest@v0.2
 ```
 
