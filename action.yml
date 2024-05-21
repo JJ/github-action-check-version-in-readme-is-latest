@@ -1,10 +1,8 @@
-name: 'Hello Perl'
-description: 'Perl Github Action Template'
-inputs:
-  template-input:  # Change this
-    description: 'What it is about'
-    required: false # or not
-    default: 'World'
+name: 'Check version in README is latest'
+description: 'Checks if the version included in the example in the README is the latest'
+branding:
+  icon: 'check-circle'
+  color: 'orange'
 runs:
   using: "composite"
   steps:
