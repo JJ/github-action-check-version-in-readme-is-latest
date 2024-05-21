@@ -1,14 +1,8 @@
-# Template for composite actions that use Perl
+# Check that the version in README is latest
 
-This is a very basic public template for composite actions written in Perl. Perl
-is included as part of all the basic runners, so you do not need to specifically
-set it up.
+Doesn't it bother you when the example in the README file does not contain the
+latest version of the GitHub action and you have to fix it by hand? Well, no
+more! Well, a little more: you will still have to fix it by hand, but this
+action with check if the example in the README of your github action actually
+contains the latest tagged version.
 
-After reading the template, you will have to change
-
-- [`action.yml`](action.yml), which describes the action and how it works:
-  inputs will have to be changed, as well as description
-- [`action.pl`](action.pl) is the script that will have to be run, generally on
-  downloaded source.
-
-Change this README too, to explain how to use your template.

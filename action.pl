@@ -2,4 +2,9 @@
 
 use v5.14;
 
-say "Hello world";
+sub getRepo() {
+  return $ENV{'GITHUB_ACTION_REPOSITORY'};
+}
+
+
+my $repoName = getRepo();
