@@ -6,7 +6,7 @@ use parent Exporter;
 
 use v5.14;
 
-our @EXPORT_OK = qw(getRepo getLastTag);
+our @EXPORT_OK = qw(getRepo getLastTag getReadme);
 
 sub getRepo() {
   return $ENV{'GITHUB_REPOSITORY'};
@@ -16,4 +16,13 @@ sub getRepo() {
 sub getLastTag() {
   my @tags = Git::command_oneline('tag');
   return shift @tags;
+}
+
+sub getReadme() {
+  my $readmemd = "README.md";
+  open my $fh, '<', $readmemd or die;
+  $/ = undef;
+  my $readme = <$fh>;
+  close $fh;
+  return $readme;
 }
