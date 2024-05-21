@@ -4,6 +4,8 @@ use Git;
 
 use parent Exporter;
 
+use v5.14;
+
 our @EXPORT_OK = qw(getRepo getLastTag);
 
 sub getRepo() {
@@ -13,5 +15,6 @@ sub getRepo() {
 
 sub getLastTag() {
   my @tags = Git::command_oneline('tag');
+  say @tags;
   return pop @tags;
 }
