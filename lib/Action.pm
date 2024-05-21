@@ -15,5 +15,5 @@ sub getRepo() {
 
 sub getLastTag() {
   my @tags = Git::command_oneline('tag');
-  return pop @tags;
+  return shift @tags;
 }
