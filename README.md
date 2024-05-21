@@ -6,3 +6,19 @@ more! Well, a little more: you will still have to fix it by hand, but this
 action with check if the example in the README of your github action actually
 contains the latest tagged version.
 
+To use it, just add this step:
+
+```yaml
+on: [push, pull_request]
+
+jobs:
+  check_v_in_example:
+    runs-on: ubuntu-latest
+    name: Test version
+    steps:
+    - name: Check version
+      uses: JJ/github-action-check-version-in-readme@v0.1
+      with:
+        fetch-depth: 0
+```
+

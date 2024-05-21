@@ -14,8 +14,9 @@ sub getRepo() {
 
 
 sub getLastTag() {
-  my @tags = Git::command_oneline('tag');
-  return shift @tags;
+  my $repo = Git->repository (Directory => '.');
+  my @tags = $repo->command('tag');
+  return pop @tags;
 }
 
 sub getReadme() {
