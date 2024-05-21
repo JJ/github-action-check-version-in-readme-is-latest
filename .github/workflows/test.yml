@@ -7,5 +7,7 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v4
+    - name: Test perl
+      run: prove
     - id: foo
       uses: ./
