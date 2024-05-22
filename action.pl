@@ -10057,6 +10057,9 @@ my $repoPlusVersion = $repoName."@".$lastTag;
 
 say "Version is $repoPlusVersion";
 
+say "Index repo", index($repoName,$readme);
+say "Index version", index($repoName,$lastTag);
+
 exit(1) unless index($repoPlusVersion,$readme) > 0;
 
 
