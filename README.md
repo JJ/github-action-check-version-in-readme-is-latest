@@ -18,6 +18,17 @@ jobs:
     name: Test version
     steps:
     - name: Check version
-      uses: JJ/github-action-check-version-in-readme-is-latest@v1
+      uses: JJ/github-action-check-version-in-readme-is-latest@v2
 ```
+
+## How it works
+
+This is a [fatpacked](https://metacpan.org/dist/App-FatPacker/view/bin/fatpack)
+Perl script that runs from the directory the action is downloaded. You want to
+make some changes, work on the [`action.src.pl`](action.src.pl) file and then
+run `make` to fatpack it.
+
+## License
+
+(c) JJ Merelo 2024, released under the [GPL V3 license](LICENSE).
 
