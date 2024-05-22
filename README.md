@@ -23,7 +23,7 @@ jobs:
     name: Test version
     steps:
     - name: Check version
-      uses: JJ/github-action-check-version-in-readme-is-latest@v2
+      uses: JJ/github-action-check-version-in-readme-is-latest@v0
 ```
 
 This will only trigger when either the `README.md` file is modified, or a new
