@@ -23,7 +23,7 @@ $fatpacked{"Action.pm"} = '#line '.(1+__LINE__).' "'.__FILE__."\"\n".<<'ACTION';
   
   sub getLastTag() {
     my $repo = Git->repository (Directory => '.');
-    my @tags = $repo->command('tag');
+    my @tags = $repo->command('tag','--sort=taggerdate');
     return pop @tags;
   }
   
