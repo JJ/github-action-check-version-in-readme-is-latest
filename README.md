@@ -10,7 +10,12 @@ To use it, just add this step:
 
 ```yaml
 name: Check correct version
-on: [push, pull_request]
+on:
+    push:
+        paths:
+        - README.md
+        tags:
+        - '*'
 
 jobs:
   check_v_in_example:
@@ -20,6 +25,9 @@ jobs:
     - name: Check version
       uses: JJ/github-action-check-version-in-readme-is-latest@v2
 ```
+
+This will only trigger when either the `README.md` file is modified, or a new
+tag is added.
 
 ## How it works
 
