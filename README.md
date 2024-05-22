@@ -38,6 +38,7 @@ run `make` to fatpack it.
 
 * **v1**: First release. It didn't actually work.
 * **v2**: Second release. It does work
+* **v3**: This time it really works. 
 
 ## License
 
