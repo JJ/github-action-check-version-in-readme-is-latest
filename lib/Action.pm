@@ -15,7 +15,7 @@ sub getRepo() {
 
 sub getLastTag() {
   my $repo = Git->repository (Directory => '.');
-  my @tags = $repo->command('tag');
+  my @tags = $repo->command('tag','--sort=taggerdate');
   return pop @tags;
 }
 
