@@ -28,6 +28,11 @@ Perl script that runs from the directory the action is downloaded. You want to
 make some changes, work on the [`action.src.pl`](action.src.pl) file and then
 run `make` to fatpack it.
 
+## Version history
+
+* **v1**: First release. It didn't actually work.
+* **v2**: Second release. It does work
+
 ## License
 
 (c) JJ Merelo 2024, released under the [GPL V3 license](LICENSE).
