@@ -10055,7 +10055,7 @@ my $readme = getReadme();
 
 my $repoPlusVersion = $repoName."@".$lastTag;
 
-exit(1) unless index($repoPlusVersion,$readme);
+exit(1) unless index($repoPlusVersion,$readme) > 0;
 
 
 
