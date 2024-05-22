@@ -6,5 +6,5 @@ branding:
 runs:
   using: "composite"
   steps:
-    - run: echo ${GITHUB_ACTION_PATH} && ${GITHUB_ACTION_PATH}/action.pl
+    - run: ${GITHUB_ACTION_PATH}/action.pl
       shell: bash

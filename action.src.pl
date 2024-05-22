@@ -13,6 +13,8 @@ my $readme = getReadme();
 
 my $repoPlusVersion = $repoName."@".$lastTag;
 
+say "Version is $repoPlusVersion";
+
 exit(1) unless index($repoPlusVersion,$readme) > 0;
 
 
