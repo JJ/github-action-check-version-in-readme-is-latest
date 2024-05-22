@@ -10055,11 +10055,7 @@ my $readme = getReadme();
 
 my $repoPlusVersion = $repoName."@".$lastTag;
 
-say "Version is $repoPlusVersion";
-
-say "Index repo ", index($readme,$repoName);
-say "Index version ", index($readme,$lastTag);
-say "Index repo+version ", index($readme,$repoPlusVersion);
+say "Current version is «$repoPlusVersion»";
 
 exit(1) unless index($readme,$repoPlusVersion) > 0;
 
