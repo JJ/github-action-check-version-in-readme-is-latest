@@ -12,5 +12,5 @@ jobs:
         fetch-depth: 0
     - name: Test perl
       run: prove
-    - id: foo
+    - name: Run action
       uses: ./
