@@ -3,7 +3,7 @@
 use v5.14;
 
 use lib qw(lib);
-use Action qw(getRepo getLastTag getReadme);
+use CheckVersion qw(getRepo getLastTag getReadme);
 
 my $repoName = getRepo();
 

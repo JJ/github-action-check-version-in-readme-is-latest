@@ -5,7 +5,7 @@
 BEGIN {
 my %fatpacked;
 
-$fatpacked{"Action.pm"} = '#line '.(1+__LINE__).' "'.__FILE__."\"\n".<<'ACTION';
+$fatpacked{"CheckVersion.pm"} = '#line '.(1+__LINE__).' "'.__FILE__."\"\n".<<'CHECKVERSION';
   package Action;
   
   use Git;
@@ -35,7 +35,7 @@ $fatpacked{"Action.pm"} = '#line '.(1+__LINE__).' "'.__FILE__."\"\n".<<'ACTION';
     close $fh;
     return $readme;
   }
-ACTION
+CHECKVERSION
 
 $fatpacked{"Error.pm"} = '#line '.(1+__LINE__).' "'.__FILE__."\"\n".<<'ERROR';
   # Error.pm
@@ -10045,8 +10045,7 @@ unshift @INC, bless \%fatpacked, $class;
 use v5.14;
 
 use lib qw(lib);
-use Action;
-say @Action::EXPORT;
+use CheckVersion qw(getRepo getLastTag getReadme);
 
 my $repoName = getRepo();
 
