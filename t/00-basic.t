@@ -2,7 +2,7 @@
 
 use Test::More;
 use lib qw(../lib ./lib);
-use Action qw(getRepo getLastTag getReadme);
+use CheckVersion qw(getRepo getLastTag getReadme);
 use v5.14;
 
 my $repo = getRepo();

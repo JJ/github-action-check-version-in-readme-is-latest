@@ -6,7 +6,7 @@ BEGIN {
 my %fatpacked;
 
 $fatpacked{"CheckVersion.pm"} = '#line '.(1+__LINE__).' "'.__FILE__."\"\n".<<'CHECKVERSION';
-  package Action;
+  package CheckVersion;
   
   use Git;
   
