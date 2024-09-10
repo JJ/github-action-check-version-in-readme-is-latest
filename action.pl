@@ -10045,7 +10045,8 @@ unshift @INC, bless \%fatpacked, $class;
 use v5.14;
 
 use lib qw(lib);
-use Action qw(getRepo getLastTag getReadme);
+use Action;
+say @Action::EXPORT;
 
 my $repoName = getRepo();
 
