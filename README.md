@@ -14,8 +14,6 @@ on:
     push:
         paths:
           - README.md
-        tags:
-          - '*'
 
 jobs:
   check_v_in_example:
